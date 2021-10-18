@@ -1,0 +1,7 @@
+docker run --rm -v /tmp:/tmp -w /tmp biodatageeks/cnv-opt-exomecopycov Rscript -e "library('EXOMECOPYCOV');run_EXOMECOPYCOV('11_cov_NA_codex.csv', '20130108.exome.targets.chr11.bed', 'reference_sample_set_kmeans_1_full.csv', 'exomecopy_from_codex')"
+
+docker run --rm -v /tmp:/tmp -w /tmp biodatageeks/cnv-opt-exomecopycov Rscript -e "library('EXOMECOPYCOV');run_EXOMECOPYCOV('11_cov_NA_exomecopy.csv', '20130108.exome.targets.chr11.bed', 'reference_sample_set_kmeans_1_full.csv', 'exomecopy_from_exomecopy')"
+
+docker run --rm -v /tmp:/tmp -w /tmp biodatageeks/cnv-opt-exomecopycov Rscript -e "library('EXOMECOPYCOV');run_EXOMECOPYCOV('11_cov_NA_canoes.csv', '20130108.exome.targets.chr11.bed', 'reference_sample_set_kmeans_1_full.csv', 'exomecopy_from_canoes')"
+
+docker run --rm -v /tmp:/tmp -w /tmp biodatageeks/cnv-opt-exomecopycov Rscript -e "library('EXOMECOPYCOV');run_EXOMECOPYCOV('11_cov_NA_exomedepth.csv', '20130108.exome.targets.chr11.bed', 'reference_sample_set_kmeans_1_full.csv', 'exomecopy_from_exomedepth')"

@@ -1,0 +1,7 @@
+docker run --rm -v /tmp:/tmp -w /tmp biodatageeks/cnv-opt-canoescov Rscript -e "library('CANOESCOV');run_CANOESCOV('1_cov_NA_codex.csv', '20130108.exome.targets.chr1.bed', 'reference_sample_set_canoes_30_full_codex.csv', 'canoes_from_codex')"
+
+docker run --rm -v /tmp:/tmp -w /tmp biodatageeks/cnv-opt-canoescov Rscript -e "library('CANOESCOV');run_CANOESCOV('1_cov_NA_exomecopy.csv', '20130108.exome.targets.chr1.bed', 'reference_sample_set_canoes_30_full_exomecopy.csv', 'canoes_from_exomecopy')"
+
+docker run --rm -v /tmp:/tmp -w /tmp biodatageeks/cnv-opt-canoescov Rscript -e "library('CANOESCOV');run_CANOESCOV('1_cov_NA_canoes.csv', '20130108.exome.targets.chr1.bed', 'reference_sample_set_canoes_30_full_canoes.csv', 'canoes_from_canoes')"
+
+docker run --rm -v /tmp:/tmp -w /tmp biodatageeks/cnv-opt-canoescov Rscript -e "library('CANOESCOV');run_CANOESCOV('1_cov_NA_exomedepth.csv', '20130108.exome.targets.chr1.bed', 'reference_sample_set_canoes_30_full_exomedepth.csv', 'canoes_from_exomedepth')"

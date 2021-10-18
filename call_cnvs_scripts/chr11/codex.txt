@@ -1,0 +1,7 @@
+docker run --rm -v /tmp:/tmp -w /tmp biodatageeks/cnv-opt-codexcov Rscript -e "library('CODEXCOV');source('run_CODEXCOV_kmeans.R');run_CODEXCOV(1, 3, 200, '11_cov_NA_codex.csv', '20130108.exome.targets.chr11.bed', 'reference_sample_set_kmeans_1_codex.csv', 'codex_from_codex')"
+
+docker run --rm -v /tmp:/tmp -w /tmp biodatageeks/cnv-opt-codexcov Rscript -e "library('CODEXCOV');source('run_CODEXCOV_kmeans.R');run_CODEXCOV(1, 3, 200, '11_cov_NA_exomecopy.csv', '20130108.exome.targets.chr11.bed', 'reference_sample_set_kmeans_1_codex.csv', 'codex_from_exomecopy')"
+
+docker run --rm -v /tmp:/tmp -w /tmp biodatageeks/cnv-opt-codexcov Rscript -e "library('CODEXCOV');source('run_CODEXCOV_kmeans.R');run_CODEXCOV(1, 3, 200, '11_cov_NA_canoes.csv', '20130108.exome.targets.chr11.bed', 'reference_sample_set_kmeans_1_codex.csv', 'codex_from_canoes')"
+
+docker run --rm -v /tmp:/tmp -w /tmp biodatageeks/cnv-opt-codexcov Rscript -e "library('CODEXCOV');source('run_CODEXCOV_kmeans.R');run_CODEXCOV(1, 3, 200, '11_cov_NA_exomedepth.csv', '20130108.exome.targets.chr11.bed', 'reference_sample_set_kmeans_1_codex.csv', 'codex_from_exomedepth')"
